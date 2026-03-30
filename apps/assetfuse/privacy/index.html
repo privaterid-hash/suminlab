@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AssetFuse — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .app-name {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+    .effective-date {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p, li { font-size: 15px; }
+    p { margin-bottom: 16px; }
+    ul {
+      margin-bottom: 16px;
+      padding-left: 20px;
+    }
+    li { margin-bottom: 8px; }
+    a { color: #333; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #f5f5f5;
+      font-weight: 600;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 32px 0;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="app-name">AssetFuse</p>
+    <p class="effective-date">Last Updated: March 9, 2026</p>
+
+    <p>Jimin Kim ("we," "us," or "our") built AssetFuse (the "App") as a commercial application. This Privacy Policy explains how we collect, use, and protect your information when you use our App.</p>
+    <p>By using AssetFuse, you agree to the collection and use of information in accordance with this policy.</p>
+
+    <hr>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>1.1 Brokerage &amp; Exchange Credentials</h3>
+    <p>To sync your portfolio, the App requires API credentials (API Key, API Secret) for supported brokers and exchanges:</p>
+    <ul>
+      <li><strong>Korea Investment &amp; Securities</strong> — App Key, App Secret, Account Number</li>
+      <li><strong>Upbit</strong> — Access Key, Secret Key</li>
+      <li><strong>Bithumb</strong> — API Key, Secret Key</li>
+      <li><strong>Coinone</strong> — Access Key, Secret Key</li>
+    </ul>
+    <p>These credentials are stored <strong>exclusively in the macOS Keychain</strong>, an encrypted system-level secure storage. They are never transmitted to our servers.</p>
+
+    <h3>1.2 Portfolio &amp; Trade Data</h3>
+    <p>When you sync your accounts, the App retrieves and stores the following data locally on your device using SwiftData:</p>
+    <ul>
+      <li>Holdings (asset name, quantity, purchase price, current price)</li>
+      <li>Trade history (buy/sell date, quantity, price, fees)</li>
+      <li>Account summary (total evaluation, profit/loss)</li>
+    </ul>
+    <p>This data is stored <strong>only on your device</strong> and is not uploaded to any external server.</p>
+
+    <h3>1.3 AI Chat Data (Max Tier Only)</h3>
+    <p>If you use the AI Chat feature, your messages and portfolio context are sent to the AI provider you select:</p>
+    <ul>
+      <li><strong>OpenAI</strong> (GPT models) — governed by <a href="https://openai.com/privacy">OpenAI's Privacy Policy</a></li>
+      <li><strong>Anthropic</strong> (Claude models) — governed by <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a></li>
+    </ul>
+    <p>Your AI API key is stored in the macOS Keychain. We do not store, log, or have access to your chat conversations or AI API keys.</p>
+
+    <h3>1.4 Subscription Information</h3>
+    <p>We use Apple's StoreKit for in-app purchases. All payment processing is handled by Apple. We do not collect or store any payment information (credit card numbers, billing addresses, etc.). We only receive a transaction receipt to verify your subscription status.</p>
+
+    <h3>1.5 Information We Do NOT Collect</h3>
+    <ul>
+      <li>Personal identification (name, email, phone number)</li>
+      <li>Location data</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>Usage analytics or behavioral tracking</li>
+      <li>Contacts, photos, or other device data</li>
+    </ul>
+    <p><strong>AssetFuse does not require account creation or sign-in.</strong></p>
+
+    <hr>
+
+    <h2>2. How We Use Your Information</h2>
+    <table>
+      <tr>
+        <th>Data</th>
+        <th>Purpose</th>
+        <th>Storage</th>
+      </tr>
+      <tr>
+        <td>Brokerage API credentials</td>
+        <td>Authenticate with broker/exchange APIs to sync your portfolio</td>
+        <td>macOS Keychain (on-device, encrypted)</td>
+      </tr>
+      <tr>
+        <td>Portfolio &amp; trade data</td>
+        <td>Display holdings, calculate profit/loss, generate reports</td>
+        <td>SwiftData (on-device)</td>
+      </tr>
+      <tr>
+        <td>AI chat messages</td>
+        <td>Send to your selected AI provider for analysis</td>
+        <td>Transmitted directly to OpenAI or Anthropic; not stored by us</td>
+      </tr>
+      <tr>
+        <td>Subscription receipt</td>
+        <td>Verify your subscription tier (Free / Pro / Max)</td>
+        <td>Managed by Apple StoreKit</td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h2>3. Third-Party Services</h2>
+    <p>The App communicates with the following third-party services <strong>on your behalf and using your own API credentials</strong>:</p>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Purpose</th>
+        <th>Data Sent</th>
+      </tr>
+      <tr>
+        <td>Korea Investment &amp; Securities API</td>
+        <td>Portfolio sync, trade history retrieval</td>
+        <td>Your API credentials (via HTTPS)</td>
+      </tr>
+      <tr>
+        <td>Upbit API</td>
+        <td>Crypto portfolio sync, trade history retrieval</td>
+        <td>Your API credentials (via HTTPS)</td>
+      </tr>
+      <tr>
+        <td>Bithumb API</td>
+        <td>Crypto portfolio sync, trade history retrieval</td>
+        <td>Your API credentials (via HTTPS)</td>
+      </tr>
+      <tr>
+        <td>Coinone API</td>
+        <td>Crypto portfolio sync, trade history retrieval</td>
+        <td>Your API credentials (via HTTPS)</td>
+      </tr>
+      <tr>
+        <td>OpenAI API (optional)</td>
+        <td>AI-powered portfolio analysis</td>
+        <td>Your API key, chat messages, portfolio summary</td>
+      </tr>
+      <tr>
+        <td>Anthropic API (optional)</td>
+        <td>AI-powered portfolio analysis</td>
+        <td>Your API key, chat messages, portfolio summary</td>
+      </tr>
+    </table>
+    <p>All communications use HTTPS encryption. We do not operate proxy servers — your device connects directly to these services.</p>
+
+    <hr>
+
+    <h2>4. Data Storage &amp; Security</h2>
+
+    <h3>4.1 On-Device Storage</h3>
+    <ul>
+      <li><strong>Sensitive credentials</strong> → macOS Keychain (AES-256 encryption, hardware-backed on Apple Silicon)</li>
+      <li><strong>Portfolio data</strong> → SwiftData (local SQLite database)</li>
+      <li><strong>No cloud sync</strong> — All data remains on your device</li>
+    </ul>
+
+    <h3>4.2 Security Measures</h3>
+    <ul>
+      <li>App Sandbox enabled (macOS security boundary)</li>
+      <li>Hardened Runtime enabled</li>
+      <li>All network communication over HTTPS/TLS</li>
+      <li>No remote servers operated by us</li>
+      <li>No data telemetry or crash reporting transmitted externally</li>
+    </ul>
+
+    <h3>4.3 Data Breach</h3>
+    <p>Since all data is stored locally on your device and we do not operate servers that store user data, the risk of a centralized data breach is eliminated. Your data security depends on your macOS device security (password, FileVault, etc.).</p>
+
+    <hr>
+
+    <h2>5. Data Retention &amp; Deletion</h2>
+    <ul>
+      <li><strong>Your data stays on your device.</strong> We have no copy of it.</li>
+      <li>You can delete individual broker accounts and their associated data within the App at any time.</li>
+      <li>Uninstalling the App removes all locally stored portfolio data.</li>
+      <li>Keychain items may persist after uninstallation; you can remove them manually via Keychain Access.</li>
+    </ul>
+
+    <hr>
+
+    <h2>6. Children's Privacy</h2>
+    <p>AssetFuse is not directed at anyone under the age of 17. We do not knowingly collect information from children. The App deals with financial investment data and is intended for adult users.</p>
+
+    <hr>
+
+    <h2>7. Export Features</h2>
+    <p>The App allows you to export your portfolio and trade history as CSV or XLSX files. These exported files are saved to a location you choose on your device. We do not receive or transmit these files.</p>
+
+    <hr>
+
+    <h2>8. Your Rights</h2>
+    <p>Since we do not collect or store your personal data on our servers, traditional data subject rights (access, correction, deletion requests) are managed directly by you on your device. You have full control over all data within the App.</p>
+    <p>If you use third-party AI services (OpenAI, Anthropic), please refer to their respective privacy policies regarding your rights over data processed by them.</p>
+
+    <hr>
+
+    <h2>9. Disclaimer</h2>
+    <p>AssetFuse is a portfolio tracking and analysis tool. It does <strong>not</strong> provide investment advice, financial planning, or trading recommendations. All data displayed, including profit/loss calculations and AI-generated analysis, is for <strong>informational purposes only</strong>. You should consult a licensed financial advisor for investment decisions.</p>
+    <p>Past performance does not guarantee future results. Cryptocurrency and securities investments involve risk of loss.</p>
+
+    <hr>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last Updated" date at the top of this document. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
+
+    <hr>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:ebbelwoi@kakao.com">ebbelwoi@kakao.com</a></p>
+
+    <hr>
+
+    <p><em>This privacy policy is effective as of March 9, 2026.</em></p>
+
+    <div class="footer">
+      <p>&copy; Jimin Kim</p>
+    </div>
+  </div>
+</body>
+</html>
